@@ -1,1 +1,1 @@
-export const serverUrl = 'http://localhost:4000'
+export const serverUrl = 'https://insta-clone-backend-r0z6.onrender.com'
