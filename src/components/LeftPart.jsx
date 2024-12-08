@@ -26,18 +26,18 @@ function LeftPart({showfunc , file}) {
             </Link>
            
 
-            <div className='d-flex px-3'>
+            <div className='d-flex px-3 cursor-pointer'>
             <SearchOutlinedIcon style={{ fontSize: 30}} />
             <p className='ms-3 p-1' >Search</p>
             </div>
 
-            <div className='d-flex px-3'>
+            <div className='d-flex px-3 cursor-pointer'>
             <ExploreOutlinedIcon style={{ fontSize: 30}} />
             <p className='ms-3 p-1' >Explore</p>
             </div>
 
-            <div className='d-flex px-3'>
-            <MovieCreationOutlinedIcon style={{ fontSize: 30}} />
+            <div className='d-flex px-3 '>
+            <MovieCreationOutlinedIcon className='cursor-pointer' style={{ fontSize: 30}} />
             <p className='ms-3 p-1' >Reels</p>
             </div>
 
@@ -51,8 +51,8 @@ function LeftPart({showfunc , file}) {
             <p className='ms-3 p-1' >Notifications</p>
             </div>
 
-            <div className='d-flex px-3' onClick={showfunc} >
-            <AddBoxOutlinedIcon style={{ fontSize: 30}} />
+            <div className='d-flex px-3 cursor-pointer' onClick={showfunc} >
+            <AddBoxOutlinedIcon className='cursor-pointer' style={{ fontSize: 30}} />
             <p className='ms-3 p-1'>Create
             </p>
             </div>

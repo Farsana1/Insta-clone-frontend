@@ -126,10 +126,10 @@ useEffect(() => {
 
       {/* post */}
       {isUploaded && !proceed && (
-        <Card className="text-center" style={{ width: '100%', maxWidth: '300px', margin: 'auto', height:'300px' }}>
+        <Card className="text-center bg-dark text-light ms-5 pt-2" style={{ width: '60%',  height:'300px' }}>
 
           <div className='d-flex justify-content-between mx-5'>
-            <div><p className='ps-5'>back</p></div>
+            <div><p className='ps-5'>Back</p></div>
             <div><h6 className='text-light'>Create a post</h6></div>
             <div><button className='btn btn-primary me-5' onClick={handleProceed}>Next</button></div>
           </div>
@@ -137,23 +137,23 @@ useEffect(() => {
             <img
               src={image}
               alt="Uploaded"
-              style={{ width: '50%', height: '40%', borderRadius: '10px' }}
+              style={{ width: '80%', height: '50%', borderRadius: '10px' }}
             />
           </Card.Body>
         </Card>
       )}
 
       {/* uploading */}
-      {proceed && !post && (<div id='next' className="card mb-3" style={{ width: '100%', maxWidth: '300px', margin: 'auto', height:'300px' }}>
-        <div className="d-flex justify-content-between mx-5">
-          <div>back</div>
+      {proceed && !post && (<div className="card mb-3 bg-dark text-light " style={{ width: '60%',  margin: 'auto', height:'300px' }}>
+        <div className="d-flex justify-content-between mx-5 ">
+          <div>Back</div>
           <p className="text-light">Create new Post</p>
-          <button className="btn btn-primary me-5" onClick={handlePost} >Share</button>
+          <button className="btn btn-primary me-5 p-3" onClick={handlePost} >Share</button>
         </div>
 
         <div className="row g-0">
           <div className="col-md-4">
-            <img src={image} className="img-fluid rounded-start" alt="Uploaded" />
+            <img src={image} className="img-fluid rounded-start ms-2" alt="Uploaded" style={{ width: '100%',  margin: 'auto', height:'200px' }}  />
           </div>
           <div className="col-md-8">
             <div className="card-body">
@@ -173,7 +173,7 @@ useEffect(() => {
       {/* uploaded */}
 
      {post && !hidePost &&  ( 
-       <div id='shared'
+       <div className='ms-5' id='shared'
           style={{
             backgroundColor: 'black',
             padding: '10px 20px',
